@@ -13,7 +13,7 @@ function App() {
         </div>
         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
           <Console />
-          <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" />
+          <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" />
         </div>
       </div>
     </div>
