@@ -8,6 +8,8 @@ script:
   - npm test
   - npm run build
 deploy:
-- provider: script
-  script: git push https://$AZURE_WA_USERNAME:$AZURE_WA_PASSWORD@https://havilehto.scm.azurewebsites.net:443/havilehto.git HEAD:refs/heads/master
-  on: master
+  provider: azure_web_apps
+  username: $AZURE_WA_USERNAME
+  password: $AZURE_WA_PASSWORD
+  site: https://havilehto.azurewebsites.net
+  edge: true # opt in to dpl v2
