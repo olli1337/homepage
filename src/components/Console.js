@@ -46,7 +46,7 @@ class Console extends React.Component {
 
     render() {
         return ( 
-            <XTerm
+               <XTerm
             ref={this.xtermRef}
             onData={(data) => {
                 const code = data.charCodeAt(0);

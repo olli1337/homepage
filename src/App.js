@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Console from "./components/Console"
 
@@ -13,7 +12,7 @@ function App() {
           <div style={{ display: 'flex', backgroundColor: 'cyan' }}>I have MScs and possess multiple tech certifications. Check out my website!</div>
         </div>
         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
-        <Console />
+          <Console />
         </div>
       </div>
     </div>
