@@ -9,5 +9,5 @@ script:
   - npm run build
 deploy:
 - provider: script
-  script: git fetch --unshallow && git push https://$AZURE_WA_USERNAME:$AZURE_WA_PASSWORD@havilehto.scm.azurewebsites.net:443/havilehto.git HEAD:refs/heads/master
+  script: git push https://$AZURE_WA_USERNAME:$AZURE_WA_PASSWORD@https://havilehto.scm.azurewebsites.net:443/havilehto.git HEAD:refs/heads/master
   on: master
