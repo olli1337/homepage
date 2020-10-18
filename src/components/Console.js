@@ -15,7 +15,7 @@ class Console extends React.Component {
 
     componentDidMount() {
         this.resetConsole();
-        this.fitAddon.fit();
+  //      this.fitAddon.fit();
     }
 
     resetConsole() {
