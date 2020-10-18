@@ -7,7 +7,11 @@ function App() {
     <div className="App">
       <div id='container'>
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center', justifyContent: 'center', backgroundColor: '#3BB0BF', height: '100%' }}>
-          <div style={{ display: 'flex' }}><img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" /> </div>
+          <div style={{ display: 'flex' }}>
+            <a href="https://travis-ci.com/github/olli1337/homepage">
+              <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" />
+            </a>
+          </div>
           <div style={{ display: 'flex', backgroundColor: 'lightgreen' }} >Hey, my name is Olli Havilehto</div>
           <div style={{ display: 'flex', backgroundColor: 'white' }}>I do programming, IT architecture and DevOps stuff</div>
           <div style={{ display: 'flex', backgroundColor: 'cyan' }}>I have MScs and possess multiple tech certifications. Check out my website!</div>

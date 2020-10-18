@@ -25,7 +25,7 @@ class Console extends React.Component {
         this.xtermRef.current.terminal.writeln('Olli OS 0.02');
         this.xtermRef.current.terminal.writeln('Hello, stranger! Type "help" to view the available commands');
         this.xtermRef.current.terminal.write('$ ');
-        this.setState({input: ''});
+        this.setState({ input: '' });
         /*
                 const fitAddon = new FitAddon();
                 this.xtermRef.current.terminal.loadAddon(fitAddon);
@@ -59,7 +59,7 @@ class Console extends React.Component {
             <XTerm
                 ref={this.xtermRef}
                 addons={[this.fitAddon]}
-                options={{cursorBlink: true}}
+                options={{ cursorBlink: true }}
                 onData={(data) => {
                     const code = data.charCodeAt(0);
                     if (code === 127) {
