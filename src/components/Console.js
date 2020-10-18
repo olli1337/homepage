@@ -1,10 +1,12 @@
 import React from 'react';
 import { XTerm } from 'xterm-for-react'
+import { FitAddon } from 'xterm-addon-fit';
 
 class Console extends React.Component {
     constructor() {
         super();
-        this.xtermRef = React.createRef()
+        this.xtermRef = React.createRef();
+        this.fitAddon = new FitAddon();
         this.state = {
             input: "",
             shellPrompt: '$'
@@ -13,61 +15,71 @@ class Console extends React.Component {
 
     componentDidMount() {
         this.resetConsole();
+        this.fitAddon.fit();
     }
 
     resetConsole() {
-        this.xtermRef.current.terminal.reset();   
-        this.xtermRef.current.terminal.setOption('theme', {foreground: '#4AF626', cursor: '#4AF626'});
+        console.log("reset console!");
+        this.xtermRef.current.terminal.reset();
+        this.xtermRef.current.terminal.setOption('theme', { foreground: '#4AF626', cursor: '#4AF626' });
         this.xtermRef.current.terminal.writeln('Olli OS 0.02');
         this.xtermRef.current.terminal.writeln('Hello, stranger! Type "help" to view the available commands');
         this.xtermRef.current.terminal.write('$ ');
+        this.setState({input: ''});
+        /*
+                const fitAddon = new FitAddon();
+                this.xtermRef.current.terminal.loadAddon(fitAddon);
+                fitAddon.fit();
+        */
     }
 
     parseInputOnEnterKey() {
 
-        switch(this.state.input){
+        switch (this.state.input) {
             case "help":
                 this.printAfterParse('\r\nYou can ask for skills, hobbies, interests, projects, meme or "clear" the screen \r\n')
-            break;
+                break;
             case 'clear':
                 this.resetConsole();
-            break;
+                break;
             default:
-                this.printAfterParse("\r\nUnknown command: '" + this.state.input +  "'\r\n")
-            break;
+                this.printAfterParse("\r\nUnknown command: '" + this.state.input + "'\r\n")
+                break;
         }
     }
 
     printAfterParse(message) {
         this.xtermRef.current.terminal.write(message);
         this.xtermRef.current.terminal.write("$ ");
-        this.setState({input: ""})
+        this.setState({ input: "" })
     }
 
     render() {
-        return ( 
-               <XTerm
-            ref={this.xtermRef}
-            onData={(data) => {
-                const code = data.charCodeAt(0);
-                if (code === 127) {
-                    console.log("backspace");
-                    this.setState({input: this.state.input.slice(0, -1)})
-                    this.xtermRef.current.terminal.write('\x1b[2K\r');
-                    this.xtermRef.current.terminal.write('$ ' + this.state.input);
-                }
-                else if (code === 13 && this.state.input.length > 0) {
-                    this.parseInputOnEnterKey();
-                } 
-                else if (code < 32) { // Disable control Keys such as arrow keys
-                    return;
-                } 
-                else { 
-                    this.xtermRef.current.terminal.write(data);
-                    this.setState({input: this.state.input + data})
-                }
-            }}
-        />
+        return (
+            <XTerm
+                ref={this.xtermRef}
+                addons={[this.fitAddon]}
+                options={{cursorBlink: true}}
+                onData={(data) => {
+                    const code = data.charCodeAt(0);
+                    if (code === 127) {
+                        console.log("backspace");
+                        this.setState({ input: this.state.input.slice(0, -1) })
+                        this.xtermRef.current.terminal.write('\x1b[2K\r');
+                        this.xtermRef.current.terminal.write('$ ' + this.state.input);
+                    }
+                    else if (code === 13 && this.state.input.length > 0) {
+                        this.parseInputOnEnterKey();
+                    }
+                    else if (code < 32) { // Disable control Keys such as arrow keys
+                        return;
+                    }
+                    else {
+                        this.xtermRef.current.terminal.write(data);
+                        this.setState({ input: this.state.input + data })
+                    }
+                }}
+            />
         )
     }
 }
