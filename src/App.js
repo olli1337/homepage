@@ -8,7 +8,7 @@ function App() {
       <div id='container'>
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center', justifyContent: 'center', backgroundColor: '#3BB0BF', height: '100%' }}>
           <div style={{ display: 'flex' }}>
-            <a href="https://travis-ci.com/github/olli1337/homepage">
+            <a href="https://travis-ci.com/github/olli1337/homepage" target="_blank">
               <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" />
             </a>
           </div>
