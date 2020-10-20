@@ -12,7 +12,7 @@ function App() {
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center', justifyContent: 'center', backgroundColor: '#3BB0BF', height: '100%', color: 'white', textShadow: '3px 3px red', fontWeight: 'bold', fontSize: '50px', fontFamily: 'Abel' }}>
           <div style={{ display: 'flex' }} >Hey, my name is Olli Havilehto</div>
           <div style={{ display: 'flex' }}>I do programming, IT architecture and DevOps stuff</div>
-          <div style={{ display: 'flex' }}>I have MScs and possess multiple tech certifications. Check out my website!</div>
+          <div style={{ display: 'flex' }}>~~~~~~</div>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ display: 'flex', color: 'white', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', backgroundColor: '#47D3E6' }}>
