@@ -3,6 +3,7 @@ import './App.css';
 import Console from "./components/Console/Console"
 import styles from './App.module.css';
 import SocialLink from './components/SocialLink/SocialLink';
+import socialLinkStyles from './components/SocialLink/SocialLink.module.css'
 
 function App() {
   return (
@@ -16,14 +17,14 @@ function App() {
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ display: 'flex', color: 'white', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', backgroundColor: '#47D3E6' }}>
             <div style={{ display: 'flex' }}>
-              <a href="https://travis-ci.com/github/olli1337/homepage" target="_blank" rel="noopener noreferrer">
-                <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" />
-              </a>
-              &nbsp;
+              <div className={socialLinkStyles.tooltip}>
+                <span class={socialLinkStyles.tooltipText}> Travis CI </span>
+                <a href="https://travis-ci.com/github/olli1337/homepage" target="_blank" rel="noopener noreferrer">
+                  <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" />
+                </a>
+              </div>
               <SocialLink iconName="fab fa-linkedin" linkTarget={'https://www.linkedin.com/in/havilehto/'} tooltipText={'LinkedIn'} />
-              &nbsp;
               <SocialLink iconName="fab fa-github" linkTarget={'https://github.com/olli1337'} tooltipText={'Github'} />
-              &nbsp;
               <SocialLink iconName="fas fa-code" linkTarget={'https://leetcode.com/olli1337/'} tooltipText={'LeetCode'} />
             </div>
           </div>
