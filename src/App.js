@@ -16,7 +16,7 @@ function App() {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ display: 'flex', color: 'white', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', backgroundColor: '#47D3E6' }}>
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
               <div className={socialLinkStyles.tooltip}>
                 <span class={socialLinkStyles.tooltipText}> Travis CI </span>
                 <a href="https://travis-ci.com/github/olli1337/homepage" target="_blank" rel="noopener noreferrer">
@@ -26,7 +26,8 @@ function App() {
               <SocialLink iconName="fab fa-linkedin" linkTarget={'https://www.linkedin.com/in/havilehto/'} tooltipText={'LinkedIn'} />
               <SocialLink iconName="fab fa-github" linkTarget={'https://github.com/olli1337'} tooltipText={'Github'} />
               <SocialLink iconName="fas fa-code" linkTarget={'https://leetcode.com/olli1337/'} tooltipText={'LeetCode'} />
-            </div>
+              <SocialLink iconName="fab fa-google-play" linkTarget={'https://play.google.com/store/apps/developer?id=Havilehto+Technologies+Shaping+Your+Future&hl=fi'} tooltipText={'Google Play'} />
+             </div>
           </div>
           <div className={styles.displayConsole}>
             <Console />
