@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Console from "./components/Console"
+import Console from "./components/Console/Console"
 import styles from './App.module.css';
-import SocialLink from './components/SocialLink';
+import SocialLink from './components/SocialLink/SocialLink';
 
 function App() {
   return (
@@ -20,15 +20,11 @@ function App() {
                 <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" />
               </a>
               &nbsp;
-              <SocialLink iconName="fab fa-linkedin" />
+              <SocialLink iconName="fab fa-linkedin" linkTarget={'https://www.linkedin.com/in/havilehto/'} tooltipText={'LinkedIn'} />
               &nbsp;
-              <SocialLink iconName="fab fa-instagram" />
+              <SocialLink iconName="fab fa-github" linkTarget={'https://github.com/olli1337'} tooltipText={'Github'} />
               &nbsp;
-              <SocialLink iconName="fab fa-flickr" />
-              &nbsp;
-              <SocialLink iconName="fab fa-github" />
-              &nbsp;
-              <SocialLink iconName="fas fa-code" />
+              <SocialLink iconName="fas fa-code" linkTarget={'https://leetcode.com/olli1337/'} tooltipText={'LeetCode'} />
             </div>
           </div>
           <div className={styles.displayConsole}>
