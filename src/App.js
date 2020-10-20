@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Console from "./components/Console"
 import styles from './App.module.css';
+import SocialLink from './components/SocialLink';
 
 function App() {
   return (
@@ -18,6 +19,16 @@ function App() {
               <a href="https://travis-ci.com/github/olli1337/homepage" target="_blank" rel="noopener noreferrer">
                 <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" />
               </a>
+              &nbsp;
+              <SocialLink iconName="fab fa-linkedin" />
+              &nbsp;
+              <SocialLink iconName="fab fa-instagram" />
+              &nbsp;
+              <SocialLink iconName="fab fa-flickr" />
+              &nbsp;
+              <SocialLink iconName="fab fa-github" />
+              &nbsp;
+              <SocialLink iconName="fas fa-code" />
             </div>
           </div>
           <div className={styles.displayConsole}>
