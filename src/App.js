@@ -27,6 +27,7 @@ function App() {
               <SocialLink iconName="fab fa-github" linkTarget={'https://github.com/olli1337'} tooltipText={'Github'} />
               <SocialLink iconName="fas fa-code" linkTarget={'https://leetcode.com/olli1337/'} tooltipText={'LeetCode'} />
               <SocialLink iconName="fab fa-google-play" linkTarget={'https://play.google.com/store/apps/developer?id=Havilehto+Technologies+Shaping+Your+Future&hl=fi'} tooltipText={'Google Play'} />
+              <SocialLink iconName="fas fa-desktop" linkTarget={'www.google.fi'} tooltipText={'Web apps'} />
              </div>
           </div>
           <div className={styles.displayConsole}>
