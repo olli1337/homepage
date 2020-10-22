@@ -1,36 +1,6 @@
 .App {
   text-align: center;
-  background-color: #5CDB95;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #203647;
 }
 
 html, body, #root, .App, .App>div {
@@ -42,15 +12,6 @@ html, body, #root, .App, .App>div {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .fadeIn {
@@ -81,7 +42,7 @@ html, body, #root, .App, .App>div {
   color: white;
   width: 100%;
   justify-content: center;
-  background-color: #5CDB95;
+  background-color: #203647;
   flex-direction: row;
 }
 
@@ -90,8 +51,6 @@ html, body, #root, .App, .App>div {
     display: flex;
     color: white;
     width: 100%;
-    justify-content: center;
-    background-color: #5CDB95;
     flex-direction: column;
     justify-content: center;
     align-items: center;

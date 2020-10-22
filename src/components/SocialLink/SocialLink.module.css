@@ -1,16 +1,20 @@
 .linkElement {
-  color: #05386B;
+  color: #007CC7;
   font-size: 3rem;
 }
 
-.tooltip {
+.socialLinkWrapper {
   position: relative;
   display: flex;
   padding: 0 25px 0 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: abel;
 }
 
 @media only screen and (max-width: 800px) {
-  .tooltip {
+  .socialLinkWrapper {
     position: relative;
     display: flex;
     padding: 0 10px 0 10px;
@@ -20,44 +24,6 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .tooltip .tooltipText {
-    visibility: visible!important;
-    overflow: visible!important;
-    width: 120px!important;
-    color: #EDF5E1;
-    text-align: center;
-    border-radius: 6px;
-    padding: 0px 0!important;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1!important;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px!important;
-    font-size: 1.5rem!important;
-    background-color: transparent!important;
-  }
-}
-
-.tooltip .tooltipText {
-  visibility: hidden;
-  width: 120px;
-  background-color: #379683;
-  color: #EDF5E1;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-  font-size: 1rem;
-}
-
-.tooltip:hover .tooltipText {
-  visibility: visible;
-  overflow: visible;
+.linkElementTitle {
+  font-family: abel;
 }
