@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  height: 100%;
+  background-color: #5CDB95;
 }
 
 .App-logo {
@@ -37,7 +39,6 @@
   }
 }
 
-
 html, body, #root, .App, .App>div {
   height: 100%;
 }
@@ -45,7 +46,9 @@ html, body, #root, .App, .App>div {
 #container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
+
 /*
 @media screen and (max-width: 1024px) {
   #container {
@@ -70,8 +73,14 @@ html, body, #root, .App, .App>div {
   border: 3px solid white;
   overflow: hidden;
   position: relative;
-  
+  opacity: 1;
 }
+
+/*
+.avatarWrapper:hover {
+
+}
+*/
 
 .avatar {
   width: 100%;

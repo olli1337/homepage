@@ -9,33 +9,21 @@ function App() {
   return (
     <div className="App">
       <div id='container'>
-        <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center', justifyContent: 'center', backgroundColor: '#5CDB95', height: '100%', color: '#EDF5E1', fontWeight: 'bold', fontSize: '50px', fontFamily: 'Abel' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center', backgroundColor: '#5CDB95',  color: '#EDF5E1', fontWeight: 'bold', fontSize: '50px', fontFamily: 'Abel' }}>
+
           <div className='avatarWrapper'>
             <img src={'/img/avatar.png'} alt='Avatar' className='avatar' />
           </div>
           <div style={{ display: 'flex' }} >Hey, my name is Olli Havilehto</div>
-          <div style={{ display: 'flex' }}>I do programming, IT architecture and DevOps stuff</div>
+          <div style={{ display: 'flex' }}>I do IT Architecture, programming, and DevOps stuff</div>
           <div style={{ display: 'flex' }}>~~~~~~</div>
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center' }}>
-          <div style={{ display: 'flex', color: 'white', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', backgroundColor: '#5CDB95' }}>
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
-              <div className={socialLinkStyles.tooltip}>
-                <span class={socialLinkStyles.tooltipText}> Travis CI </span>
-                <a href="https://travis-ci.com/github/olli1337/homepage" target="_blank" rel="noopener noreferrer">
-                  <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" />
-                </a>
-              </div>
-              <SocialLink iconName="fab fa-linkedin" linkTarget={'https://www.linkedin.com/in/havilehto/'} tooltipText={'LinkedIn'} />
-              <SocialLink iconName="fab fa-github" linkTarget={'https://github.com/olli1337'} tooltipText={'Github'} />
-              <SocialLink iconName="fas fa-code" linkTarget={'https://leetcode.com/olli1337/'} tooltipText={'LeetCode'} />
-              <SocialLink iconName="fab fa-google-play" linkTarget={'https://play.google.com/store/apps/developer?id=Havilehto+Technologies+Shaping+Your+Future&hl=fi'} tooltipText={'Google Play'} />
-              <SocialLink iconName="fas fa-desktop" linkTarget={'www.google.fi'} tooltipText={'Web apps'} />
-            </div>
-          </div>
-          <div className={styles.displayConsole}>
-            <Console />
-          </div>
+        <div style={{ display: 'flex', color: 'white', width: '100%',  justifyContent: 'space-evenly', backgroundColor: '#5CDB95' }}>
+            <SocialLink iconName="fab fa-linkedin" linkTarget={'https://www.linkedin.com/in/havilehto/'} tooltipText={'LinkedIn'} />
+            <SocialLink iconName="fab fa-github" linkTarget={'https://github.com/olli1337'} tooltipText={'Github'} />
+            <SocialLink iconName="fas fa-code" linkTarget={'https://leetcode.com/olli1337/'} tooltipText={'LeetCode'} />
+            <SocialLink iconName="fab fa-google-play" linkTarget={'https://play.google.com/store/apps/developer?id=Havilehto+Technologies+Shaping+Your+Future&hl=fi'} tooltipText={'Google Play'} />
+            <SocialLink iconName="fas fa-desktop" linkTarget={'https://www.google.fi'} tooltipText={'Web apps'} />
         </div>
       </div>
     </div>
@@ -43,3 +31,27 @@ function App() {
 }
 
 export default App;
+
+/*
+          <div className={styles.displayConsole}>
+            <Console />
+          </div>
+          */
+
+/*
+        <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center' }}>
+</div>
+*/
+
+
+
+/*
+
+          <div className={socialLinkStyles.tooltip}>
+            <span class={socialLinkStyles.tooltipText}> Travis CI </span>
+            <a href="https://travis-ci.com/github/olli1337/homepage" target="_blank" rel="noopener noreferrer">
+              <img src="https://travis-ci.com/olli1337/homepage.svg?branch=master" alt="build status" />
+            </a>
+          </div>
+
+*/

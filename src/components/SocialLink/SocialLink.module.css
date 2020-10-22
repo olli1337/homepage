@@ -23,6 +23,7 @@
     bottom: 100%;
     left: 50%;
     margin-left: -60px;
+    font-size: 1rem;
   }
   
   .tooltip:hover .tooltipText {
