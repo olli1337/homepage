@@ -6,6 +6,7 @@
 .tooltip {
     position: relative;
     display: flex;
+    padding: 0 25px 0 25px;
   }
   
   .tooltip .tooltipText {

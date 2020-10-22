@@ -49,13 +49,7 @@ html, body, #root, .App, .App>div {
   justify-content: center;
 }
 
-/*
-@media screen and (max-width: 1024px) {
-  #container {
-    flex-direction: column;
-  }
-}
-*/
+
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -75,12 +69,6 @@ html, body, #root, .App, .App>div {
   position: relative;
   opacity: 1;
 }
-
-/*
-.avatarWrapper:hover {
-
-}
-*/
 
 .avatar {
   width: 100%;
