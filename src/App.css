@@ -44,15 +44,15 @@ html, body, #root, .App, .App>div {
 
 #container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-
+/*
 @media screen and (max-width: 1024px) {
   #container {
     flex-direction: column;
   }
 }
-
+*/
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -61,4 +61,22 @@ html, body, #root, .App, .App>div {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+.avatarWrapper {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  border: 3px solid white;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+  transform: scale(1.6);
+  margin-top: 30px;
+  margin-left: 12px;
 }

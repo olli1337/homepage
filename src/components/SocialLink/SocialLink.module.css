@@ -1,5 +1,5 @@
 .linkElement {
-    color: blue;
+    color: #05386B;
     font-size: 3rem;
 }
 
@@ -11,8 +11,8 @@
   .tooltip .tooltipText {
     visibility: hidden;
     width: 120px;
-    background-color: black;
-    color: #fff;
+    background-color: #379683;
+    color: #EDF5E1;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
