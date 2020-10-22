@@ -1,32 +1,39 @@
 .linkElement {
-    color: #05386B;
-    font-size: 3rem;
+  color: #05386B;
+  font-size: 3rem;
 }
 
 .tooltip {
+  position: relative;
+  display: flex;
+  padding: 0 25px 0 25px;
+}
+
+@media only screen and (max-width: 800px) {
+  .tooltip {
     position: relative;
     display: flex;
-    padding: 0 25px 0 25px;
+    padding: 0 10px 0 10px;
   }
-  
-  .tooltip .tooltipText {
-    visibility: hidden;
-    width: 120px;
-    background-color: #379683;
-    color: #EDF5E1;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-    font-size: 1rem;
-  }
-  
-  .tooltip:hover .tooltipText {
-    visibility: visible;
-  }
+}
+
+.tooltip .tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: #379683;
+  color: #EDF5E1;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 1rem;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+}
