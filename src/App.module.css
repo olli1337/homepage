@@ -11,3 +11,103 @@
     background-color: #5CDB95;
 }
 
+.topSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #203647;
+    color: #EEFBFB;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Abel';
+    margin-bottom: 20px;
+}
+
+.topSectionTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.topSectionTitleText {
+    display: flex;
+    margin: 0 5px 0 5px;
+    text-shadow: 2px 2px black;
+}
+
+.avatarWrapper {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    border: 3px solid white;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+}
+
+.avatar {
+    width: 100%;
+    height: auto;
+    transform: scale(1.6);
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+.App {
+    text-align: center;
+    background-color: #203647;
+}
+
+html, body, #root, .App, .App>div {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.SocialLinkWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    background-color: #203647;
+    flex-direction: row;
+}
+
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #203647;
+    color: #EEFBFB;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Abel';
+    margin-top: 20px;
+}
+
+.bottomSectionTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bottomSectionTitletext {
+    display: flex;
+    margin: 0 5px 0 5px;
+    text-shadow: 2px 2px black;
+}
