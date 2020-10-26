@@ -8,7 +8,7 @@ class SocialLink extends React.Component {
                 <a className={styles.linkElement} href={this.props.linkTarget} target="_blank" rel="noopener noreferrer">
                     <i className={this.props.iconName}></i>
                 </a>
-                <span className={'linkElementTitle'}>{this.props.tooltipText}</span> 
+                <span className={styles.linkElementTitle}>{this.props.tooltipText}</span> 
             </div>
         )
     }
