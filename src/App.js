@@ -34,9 +34,3 @@ function App() {
 }
 
 export default App;
-
-/*
-          <SocialLink iconName="fas fa-desktop" linkTarget={'https://www.udemy.com/user/olli-havilehto/'} tooltipText={'Udemy'} />
-                      <div style={{ display: 'flex', margin: '0px 5px 0 5px', textShadow: '2px 2px black' }}>~~~~~~</div>
-
-*/
