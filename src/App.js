@@ -19,11 +19,10 @@ function App() {
           <SocialLink iconName="fab fa-linkedin" linkTarget={'https://www.linkedin.com/in/havilehto/'} tooltipText={'LinkedIn'} />
           <SocialLink iconName="fab fa-github" linkTarget={'https://github.com/olli1337'} tooltipText={'Github'} />
           <SocialLink iconName="fas fa-code" linkTarget={'https://leetcode.com/olli1337/'} tooltipText={'LeetCode'} />
-          <SocialLink iconName="fab fa-google-play" linkTarget={'https://play.google.com/store/apps/developer?id=Havilehto+Technologies+Shaping+Your+Future&hl=fi'} tooltipText={'Google Play'} />
         </div>
         <div className={styles.bottomSection}>
           <div className={styles.bottomSectionTitle}>
-            <div className={styles.bottomSectionTitleText}>I have Master in Computer Science and I am Azure, Scrum, DevOps & ITIL certified.</div>
+            <div className={styles.bottomSectionTitleText}>I have Master's degree in Computer Science and I am Azure, Scrum, DevOps & ITIL certified.</div>
           </div>
         </div>
       </div>
@@ -32,3 +31,8 @@ function App() {
 }
 
 export default App;
+
+/*
+
+          <SocialLink iconName="fab fa-google-play" linkTarget={'https://play.google.com/store/apps/developer?id=Havilehto+Technologies+Shaping+Your+Future&hl=fi'} tooltipText={'Google Play'} />
+          */
